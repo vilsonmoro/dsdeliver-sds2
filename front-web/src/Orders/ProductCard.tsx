@@ -1,6 +1,5 @@
 
 import { formatPrice } from './helpers';
-import ProductList from './ProductList';
 import { Product } from './types';
 
 type Props = {
@@ -8,8 +7,6 @@ type Props = {
     onSelectProduct: (product: Product) => void;
     isSelected: boolean;
 }
-
-
 
 function ProductCard({product, onSelectProduct, isSelected} : Props){
     return(
